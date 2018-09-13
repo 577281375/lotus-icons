@@ -1,5 +1,5 @@
 {
-  "name": "lotus-icons",
+  "name": "@lotus-ui/icons",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -16,9 +16,13 @@
     "@types/jest": "^23.3.2",
     "@types/lodash": "^4.14.116",
     "@types/node": "^10.9.4",
+    "@types/react": "^16.4.14",
+    "@types/react-dom": "^16.0.7",
     "husky": "^1.0.0-rc.14",
     "jest": "^23.6.0",
+    "lint-staged": "^7.2.2",
     "lodash": "^4.17.11",
+    "tslint": "^5.11.0",
     "typescript": "^3.0.3",
     "webpack": "^4.18.1",
     "webpack-cli": "^3.1.0"
