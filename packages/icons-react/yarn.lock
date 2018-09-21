@@ -16,6 +16,10 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
+"@lotus-ui/icons@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@lotus-ui/icons/-/icons-0.0.1.tgz#6fbcb41d6be298bc59de24830612391547e6623d"
+
 "@types/jest@^23.3.2":
   version "23.3.2"
   resolved "http://registry.npm.taobao.org/@types/jest/download/@types/jest-23.3.2.tgz#07b90f6adf75d42c34230c026a2529e56c249dbb"

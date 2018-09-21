@@ -1,34 +1,57 @@
 {
   "name": "@lotus-ui/icons",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "index.js",
   "scripts": {
     "bootstrap": "yarn || npm i",
-    "commitmsg": "commitlint --env HUSKY_GIT_PARAMS"
+    "commitmsg": "commitlint --env HUSKY_GIT_PARAMS",
+    "build": "",
+    "build:lib": "cross-env NODE_ENV=production rimraf dist && tsc --project ./tsconfig.json --outDir dist",
+    "publish": "npm publush --access=public"
   },
   "repository": "https://github.com/lotus-ui/lotus-icons.git",
-  "author": "wangxingkang <wang_xingkang@qqq.com>",
+  "author": "wangxingkang <wang_xingkang@qq.com>",
+  "files": [
+    "lib",
+    "svg"
+  ],
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.1",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-decorators": "^7.1.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.1.0",
+    "@babel/runtime": "^7.0.0",
     "@commitlint/cli": "^7.1.2",
     "@commitlint/config-angular": "^7.1.2",
+    "@svgr/core": "^2.4.1",
     "@types/jest": "^23.3.2",
     "@types/lodash": "^4.14.116",
     "@types/node": "^10.9.4",
+    "@types/prettier": "^1.13.2",
     "@types/react": "^16.4.14",
     "@types/react-dom": "^16.0.7",
+    "@types/rimraf": "^2.0.2",
+    "@types/svgo": "^1.0.1",
+    "chalk": "^2.4.1",
     "cross-env": "^5.2.0",
     "husky": "^1.0.0-rc.14",
     "jest": "^23.6.0",
     "lint-staged": "^7.2.2",
     "lodash": "^4.17.11",
+    "rimraf": "^2.6.2",
+    "svgo": "^1.0.5",
     "tslint": "^5.11.0",
     "typescript": "^3.0.3",
     "webpack": "^4.18.1",
-    "webpack-cli": "^3.1.0"
+    "webpack-cli": "^3.1.0",
+    "webpackbar": "^2.6.3"
   },
   "husky": {
     "hooks": {

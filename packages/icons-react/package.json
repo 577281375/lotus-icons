@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "@lotus-ui/icons": "^0.0.1"
+  },
   "devDependencies": {
     "@types/jest": "^23.3.2",
     "@types/node": "^10.9.4",
