@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "peerDependencies": {
+    "@lotus-ui/icons": ">=0.0.1",
+    "react": ">=16.0.0"
+  },
   "dependencies": {
     "@lotus-ui/icons": "^0.0.1"
   },
