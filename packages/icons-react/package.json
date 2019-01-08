@@ -1,23 +1,48 @@
 {
   "name": "@lotus-ui/icons-react",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "module": "./es/index.js",
+  "sideEffects": false,
   "license": "MIT",
   "peerDependencies": {
-    "@lotus-ui/icons": ">=0.0.1",
     "react": ">=16.0.0"
   },
-  "dependencies": {
-    "@lotus-ui/icons": "^0.0.1"
+  "scripts": {
+    "start": "rc-tools run server",
+    "lint": "rc-tools run lint",
+    "compile": "rc-tools run compile --babel-runtime",
+    "build": "rc-tools run build",
+    "dist": "rc-tools run dist",
+    "watch": "rc-tools run watch",
+    "test": "jest"
   },
+  "dependencies": {},
+  "config": {
+    "entry": {
+      "@lotus-ui/icons-react": [
+        "./src/index.ts"
+      ]
+    },
+    "port": 8000
+  },
+  "files": [
+    "es",
+    "lib"
+  ],
   "devDependencies": {
     "@types/jest": "^23.3.2",
     "@types/node": "^10.9.4",
     "@types/react": "^16.4.14",
     "@types/react-dom": "^16.0.7",
+    "babel-runtime": "^6.26.0",
     "jest": "^23.6.0",
+    "mobx": "^5.8.0",
+    "mobx-react": "^5.4.3",
+    "rc-tools": "^9.3.3",
     "react": "^16.5.0",
     "react-dom": "^16.5.0",
+    "styled-components": "^4.1.3",
     "typescript": "^3.0.3"
   }
 }
