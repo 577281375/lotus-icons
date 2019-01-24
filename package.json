@@ -16,7 +16,9 @@
     "svg"
   ],
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "@types/styled-components": "^4.1.6"
+  },
   "devDependencies": {
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.1",
@@ -57,10 +59,5 @@
     "webpack": "^4.18.1",
     "webpack-cli": "^3.1.0",
     "webpackbar": "^2.6.3"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run precommit"
-    }
   }
 }
